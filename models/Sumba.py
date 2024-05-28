@@ -123,7 +123,7 @@ class Model(nn.Module):
         else:
             self.receptive_field = config.layers*(kernel_size-1) + 1
 
-        # todo for block defination
+
         self.total_t_len = max(self.receptive_field, self.seq_length)
         self.blocks = nn.ModuleList()
 
